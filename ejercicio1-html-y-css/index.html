@@ -1,9 +1,32 @@
 <html>
     <head>
         <title>Login</title>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-
+        <div class="login">
+            <h1>Login</h1>
+            <form>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+              
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+              
+              <label for="genero">Género:</label>
+              <select id="genero" name="genero" required>
+                <option value="" disabled selected>Selecciona tu género</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+              </select>
+              
+              <label for="terminos">
+                <input type="checkbox" id="terminos" name="terminos" required> Acepto los términos
+              </label>
+              
+              <button type="submit">Ingresar</button>
+            </form>
+          </div>
     </body>
 </html>
